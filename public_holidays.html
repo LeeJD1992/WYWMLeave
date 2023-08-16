@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Holidays</title>
+    <link rel="icon" href="https://cdn.withyouwithme.com/img/logo/favicon.jpg" sizes="192x192">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="https://withyouwithme.com/wp-content/uploads/2023/02/WYWM_Logo_Full-White.png" alt="Public Logo" class="logo">
+        <h1>Public Holidays</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html" class="nav-link"><i class="fas fa-tachometer-alt"></i><br>Dashboard</a></li>
+                <li><a href="leave_request.html" class="nav-link"><i class="fas fa-calendar-plus"></i><br>Leave Request</a></li>
+                <li><a href="leave_approval.html" class="nav-link"><i class="fas fa-check-circle"></i><br>Leave Approval</a></li>
+                <li><a href="leave_balance.html" class="nav-link"><i class="fas fa-hourglass"></i><br>Leave Balance</a></li>
+                <li><a href="Public_holidays.html" class="nav-link"><i class="fas fa-globe"></i><br>Public Holidays</a></li>
+                <li><a href="profile_settings.html" class="nav-link"><i class="fas fa-user-cog"></i><br>Profile Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="selector-container">
+            <div class="selector">
+                <label for="countrySelector">Select a country: </label>
+                <select id="countrySelector">
+                    <option value="uk">United Kingdom</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <!-- Add other country options as needed -->
+                </select>
+            </div>
+            <div class="selector">
+                <label for="yearSelector">Select a year: </label>
+                <select id="yearSelector">
+                    <option value="current">Current Year</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                </select>
+            </div>
+            <button id="updateButton">Update</button>
+        </div>
+        <table id="bankHolidaysTable" class="common-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Holiday Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table body will be populated by JavaScript -->
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
